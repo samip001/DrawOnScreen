@@ -9,7 +9,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        // constructing Draw class
+        Draw draw = new Draw(this);
+
+        setContentView(draw);
 
     }
 }
